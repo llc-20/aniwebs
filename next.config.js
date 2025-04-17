@@ -12,6 +12,8 @@ const nextConfig = {
       },
     ];
   },
+  basePath: process.env.NODE_ENV === 'production' ? '/aniwebs' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/aniwebs/' : '',
 };
 
 module.exports = nextConfig; 
